@@ -1,0 +1,228 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Grold-Regular";
+}
+@font-face {
+  font-family: "Grold-Regular";
+  src: url(./assets/Fonts/Grold-Regular.ttf);
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(112, 128, 144, 0.671);
+  color: black;
+  font-size: 20px;
+}
+a:hover {
+  background-color: rgba(255, 255, 255, 0.534);
+}
+
+nav a {
+  color: black;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  float: right;
+  gap: 50px;
+  padding: 30px;
+  text-decoration: none;
+}
+nav button {
+  background-color: rgb(89, 218, 89);
+  border-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px;
+}
+.cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.cart div {
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+}
+.sidebar {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  position: absolute;
+  background-color: cornflowerblue;
+  padding: 16px;
+}
+.sidebar_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.product_section {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+}
+.product_cart {
+  background-color: rgba(10, 76, 88, 0.432);
+  width: 320px;
+  height: 200px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.acces {
+  background-color: rgba(68, 7, 50, 0.507);
+  width: 350px;
+  height: 230px;
+  border: 10px solid black;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  padding-top: 60px;
+  font-size: 20px;
+}
+.accesseries {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 50px;
+}
+.toggle--button {
+  border: none;
+  font-size: 25px;
+  background-color: lightseagreen;
+  color: white;
+  cursor: pointer;
+  box-shadow: #888;
+  border-radius: 10px;
+  align-items: baseline;
+}
+.toggle--close {
+  border: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  box-shadow: #888;
+  border-radius: 10px;
+  background-color: lightcoral;
+}
+.hamburger {
+  display: none;
+}
+.rendering {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+}
+.follow_card {
+  background-color: rgba(76, 88, 10, 0.432);
+  width: 320px;
+  height: 200px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.Kore {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  height: 40vh;
+  width: 40vh;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  border: 1px solid black;
+}
+.container button {
+  background-color: aqua;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  nav a {
+    display: none;
+  }
+}
+.counter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.counter_output {
+  font-size: 20px;
+  color: black;
+}
+.btn_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.control_btn {
+  font-size: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: pink;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
