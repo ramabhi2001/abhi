@@ -8,6 +8,7 @@ import Arra from "./components/arra";
 import Cards from "./components/cards";
 import Acces from "./components/acces";
 import Kore from "./tool";
+import Notifying from "./components/file";
 
 function App() {
   const followers = [
@@ -269,6 +270,7 @@ function App() {
       </div>
       <Acces />
       <Kore />
+      <Notifying />
     </React.Fragment>
   );
 }
